@@ -3,7 +3,57 @@ body {
 }
 
 html {
-  scroll-behavior: smooth; /*Animacion de seguimiento al cursor del mouse*/
+  scroll-behavior: smooth; /*Animacion de seguimiento al cursor del mouse peque;a transicion entre secciones*/
+}
+
+section {
+  min-height: 100vh; /* Esto es para que por defecto cada section ocupe el tamano del viewport pero si alguna seccion es mas grande con mas contenido va a crecer de forma automatica*/
+  box-sizing: border-box;
+}
+
+#menu {
+  background-color: rga(195, 35, 88);
+  display: grid; /* Cada vez que declaramos grid tenemos que definir el numero de columnas y de filas*/
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(2, 200px);
+  justify-content: center; /*alinearlo de forma horizontal*/
+  align-content: center; /* alinearlo de forma vertical*/
+  grid-template-areas: "about about projects projects" "about about posts contact";
+  height: 100%;
+}
+#menu .tile {
+  overflow: hidden;
+  cursor: pointer;
+}
+#menu .tile a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces*/
+}
+#menu .tile .front {
+  color: white;
+  display: grid;
+  height: 100%;
+  justify-items: center;
+  align-items: center;
+  background-color: black;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: all 0.3s ease; /* Transicion suave con ease*/
+}
+#menu .tile .back {
+  color: white;
+  display: grid;
+  height: 100%;
+  justify-items: center;
+  align-items: center;
+  background-color: #222;
+  font-weight: bold;
+  font-size: 28px;
+}
+#menu .about-tile {
+  grid-area: about;
+}
+#menu .projects-tile {
+  grid-area: projects;
 }
 
 /*# sourceMappingURL=main.css.map */
