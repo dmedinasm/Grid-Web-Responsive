@@ -37,6 +37,8 @@ section {
   background-color: black;
   padding: 20px;
   box-sizing: border-box;
+  background-size: cover; /*Este codigo nos permite agrandar la imagen de fondo al tamano del contenedor*/
+  background-position: center center;
   transition: all 0.3s ease; /* Transicion suave con ease*/
 }
 #menu .tile .back {
@@ -49,11 +51,29 @@ section {
   font-weight: bold;
   font-size: 28px;
 }
+#menu .tile:hover .front {
+  margin-top: -100%;
+}
 #menu .about-tile {
   grid-area: about;
 }
+#menu .about-tile .front {
+  background-image: url(img/profile.png);
+}
 #menu .projects-tile {
   grid-area: projects;
+}
+#menu .projects-tile .front {
+  background-image: url(img/work-01.png);
+}
+#menu .projects-tile:hover .front {
+  margin-top: -50%;
+}
+#menu .posts-tile .front {
+  background-image: url(img/work-02.png);
+}
+#menu .contact-tile .front {
+  background-image: url(img/work-03.png);
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -43,6 +43,8 @@ section{
             background-color: black;
             padding: 20px;
             box-sizing: border-box;
+            background-size: cover;/*Este codigo nos permite agrandar la imagen de fondo al tamano del contenedor*/
+            background-position: center center;
             transition: all 0.3s ease;/* Transicion suave con ease*/
         }
         .back{
@@ -51,14 +53,41 @@ section{
             font-weight: bold;
             font-size: 28px;
         }
+        &:hover{
+            .front{
+                margin-top: -100%;
+            }
+        }
     }
     
     .about-tile{
         grid-area: about;
+        .front{
+        background-image: url(img/profile.png);
+        }
+        
     }
     
     .projects-tile{
         grid-area: projects;
+        .front{
+        background-image: url(img/work-01.png);
+        }
+        &:hover{
+            .front{
+                margin-top:-50%; 
+            }
+        }
+    }
+    .posts-tile{
+        .front{
+        background-image: url(img/work-02.png);
+        }
+    }
+    .contact-tile{
+        .front{
+        background-image: url(img/work-03.png);
+        } 
     }
 }
 
