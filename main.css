@@ -12,7 +12,7 @@ section {
 }
 
 #menu {
-  background-color: rga(195, 35, 88);
+  background-color: rgb(195, 35, 88);
   display: grid; /* Cada vez que declaramos grid tenemos que definir el numero de columnas y de filas*/
   grid-template-columns: repeat(4, 200px);
   grid-template-rows: repeat(2, 200px);
