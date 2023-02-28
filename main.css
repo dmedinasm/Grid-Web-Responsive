@@ -112,4 +112,68 @@ section {
   object-fit: cover; /* Si la imagen no tiene tamaño fijo digase px o % no tendra efecto esta propiedad*/
 }
 
+#projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  grid-auto-flow: row;
+  grid-template-areas: "main-photo main-photo main-photo photo-2 photo-2 photo-2 photo-3 photo-3 photo-4 photo-4" "main-photo main-photo main-photo photo-2 photo-2 photo-2 photo-3 photo-3 photo-4 photo-4" "main-photo main-photo main-photo photo-2 photo-2 photo-2 photo-5 photo-17 photo-4 photo-4" "main-photo main-photo main-photo photo-7 photo-7 photo-6 photo-6 photo-6 photo-9 photo-9" "main-photo main-photo main-photo photo-7 photo-7 photo-6 photo-6 photo-6 photo-9 photo-9" "main-photo main-photo main-photo photo-7 photo-7 photo-8 photo-8 photo-8 photo-8 photo-8" "main-photo main-photo main-photo photo-10 photo-10 photo-8 photo-8 photo-8 photo-8 photo-8" "main-photo main-photo main-photo photo-10 photo-10 photo-11 photo-11 photo-11 photo-12 photo-12" "main-photo main-photo main-photo photo-13 photo-14 photo-11 photo-11 photo-11 photo-12 photo-12" "main-photo main-photo main-photo photo-15 photo-16 photo-11 photo-11 photo-11 photo-12 photo-12";
+}
+#projects .tile {
+  background-color: #ccc;
+  border-radius: 5px;
+}
+#projects .main-photo {
+  grid-area: main-photo;
+}
+#projects .photo-2 {
+  grid-area: photo-2;
+}
+#projects .photo-3 {
+  grid-area: photo-3;
+}
+#projects .photo-4 {
+  grid-area: photo-4;
+}
+#projects .photo-5 {
+  grid-area: photo-5;
+}
+#projects .photo-17 {
+  grid-area: photo-17;
+}
+#projects .photo-7 {
+  grid-area: photo-7;
+}
+#projects .photo-6 {
+  grid-area: photo-6;
+}
+#projects .photo-9 {
+  grid-area: photo-9;
+}
+#projects .photo-10 {
+  grid-area: photo-10;
+}
+#projects .photo-8 {
+  grid-area: photo-8;
+}
+#projects .photo-11 {
+  grid-area: photo-11;
+}
+#projects .photo-12 {
+  grid-area: photo-12;
+}
+#projects .photo-13 {
+  grid-area: photo-13;
+}
+#projects .photo-14 {
+  grid-area: photo-14;
+}
+#projects .photo-15 {
+  grid-area: photo-15;
+}
+#projects .photo-16 {
+  grid-area: photo-16;
+}
+
 /*# sourceMappingURL=main.css.map */
