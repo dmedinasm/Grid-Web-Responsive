@@ -5,6 +5,14 @@
     justify-items: center;
     align-items: center;
 }
+
+@mixin mainphoto {
+    background-color: black;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 5px;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 
@@ -131,6 +139,7 @@ section{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
+    padding: 10px;
     grid-auto-flow: row;
     grid-template-areas:
       "main-photo main-photo main-photo photo-2 photo-2 photo-2 photo-3 photo-3 photo-4 photo-4"
@@ -147,45 +156,72 @@ section{
       .tile {
         background-color: #ccc;
         border-radius: 5px;
+
+        background-size: cover;//Todas las imagenes sin importar el tamaño se escalen proporcionalmente al contenedor
+        background-position: center center;//Que las imagenes aparezcan centradas(vertical y horizontal)
+         a {
+            display: grid;
+            height: 100%;
+         }
       }
-
-        .main-photo { grid-area: main-photo; }
+        .main-photo {
+             grid-area: main-photo;
+             padding: 20px;
+             color: white;
+             font-size: 20px;
+             background-image: url(img/work-17.png);
+             h2{
+                @include mainphoto();
+             }
+             div{
+                @include mainphoto();
+             }
+            }
   
-        .photo-2 { grid-area: photo-2; }
+        .photo-02 {
+             grid-area: photo-2; 
+             background-image: url(/img/work-01.png);
+            }
   
-        .photo-3 { grid-area: photo-3; }
+        .photo-03 { 
+            grid-area: photo-3; 
+            background-image: url(/img/work-02.png);
+        }
   
-        .photo-4 { grid-area: photo-4; }
+        .photo-04 { grid-area: photo-4; background-image: url(/img/work-06.png);}
   
-        .photo-5 { grid-area: photo-5; }
+        .photo-05 { grid-area: photo-5; background-image: url(/img/work-13.png);}
   
-        .photo-17 { grid-area: photo-17; }
+        .photo-17 { grid-area: photo-17; background-image: url(/img/work-03.png);}
   
-        .photo-7 { grid-area: photo-7; }
+        .photo-07 { grid-area: photo-7; background-image: url(/img/work-04.png);}
   
-        .photo-6 { grid-area: photo-6; }
+        .photo-06 { grid-area: photo-6; background-image: url(/img/work-05.png);}
   
-        .photo-9 { grid-area: photo-9; }
+        .photo-09 { grid-area: photo-9; background-image: url(/img/work-07.png);}
   
-        .photo-10 { grid-area: photo-10; }
+        .photo-10 { grid-area: photo-10; background-image: url(/img/work-08.png);}
   
-        .photo-8 { grid-area: photo-8; }
+        .photo-08 { grid-area: photo-8; background-image: url(/img/work-09.png);}
   
-        .photo-11 { grid-area: photo-11; }
+        .photo-11 { grid-area: photo-11; background-image: url(/img/work-10.png);}
   
-        .photo-12 { grid-area: photo-12; }
+        .photo-12 { grid-area: photo-12; background-image: url(/img/work-11.png);}
   
-        .photo-13 { grid-area: photo-13; }
+        .photo-13 { grid-area: photo-13; background-image: url(/img/work-12.png);}
   
-        .photo-14 { grid-area: photo-14; }
+        .photo-14 { grid-area: photo-14; background-image: url(/img/work-14.png);}
+        .photo-15 { grid-area: photo-15; background-image: url(/img/work-15.png);}
+        .photo-16 { grid-area: photo-16; background-image: url(/img/work-16.png);}
   
-        .photo-15 { grid-area: photo-15; }
-  
-        .photo-16 { grid-area: photo-16; }
       
-  }
+
+       
+        
+      
   
   
   
   
 
+}

@@ -117,63 +117,102 @@ section {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 10px;
+  padding: 10px;
   grid-auto-flow: row;
   grid-template-areas: "main-photo main-photo main-photo photo-2 photo-2 photo-2 photo-3 photo-3 photo-4 photo-4" "main-photo main-photo main-photo photo-2 photo-2 photo-2 photo-3 photo-3 photo-4 photo-4" "main-photo main-photo main-photo photo-2 photo-2 photo-2 photo-5 photo-17 photo-4 photo-4" "main-photo main-photo main-photo photo-7 photo-7 photo-6 photo-6 photo-6 photo-9 photo-9" "main-photo main-photo main-photo photo-7 photo-7 photo-6 photo-6 photo-6 photo-9 photo-9" "main-photo main-photo main-photo photo-7 photo-7 photo-8 photo-8 photo-8 photo-8 photo-8" "main-photo main-photo main-photo photo-10 photo-10 photo-8 photo-8 photo-8 photo-8 photo-8" "main-photo main-photo main-photo photo-10 photo-10 photo-11 photo-11 photo-11 photo-12 photo-12" "main-photo main-photo main-photo photo-13 photo-14 photo-11 photo-11 photo-11 photo-12 photo-12" "main-photo main-photo main-photo photo-15 photo-16 photo-11 photo-11 photo-11 photo-12 photo-12";
 }
 #projects .tile {
   background-color: #ccc;
   border-radius: 5px;
+  background-size: cover;
+  background-position: center center;
+}
+#projects .tile a {
+  display: grid;
+  height: 100%;
 }
 #projects .main-photo {
   grid-area: main-photo;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  background-image: url(img/work-17.png);
 }
-#projects .photo-2 {
+#projects .main-photo h2 {
+  background-color: black;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 5px;
+}
+#projects .main-photo div {
+  background-color: black;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 5px;
+}
+#projects .photo-02 {
   grid-area: photo-2;
+  background-image: url(/img/work-01.png);
 }
-#projects .photo-3 {
+#projects .photo-03 {
   grid-area: photo-3;
+  background-image: url(/img/work-02.png);
 }
-#projects .photo-4 {
+#projects .photo-04 {
   grid-area: photo-4;
+  background-image: url(/img/work-06.png);
 }
-#projects .photo-5 {
+#projects .photo-05 {
   grid-area: photo-5;
+  background-image: url(/img/work-13.png);
 }
 #projects .photo-17 {
   grid-area: photo-17;
+  background-image: url(/img/work-03.png);
 }
-#projects .photo-7 {
+#projects .photo-07 {
   grid-area: photo-7;
+  background-image: url(/img/work-04.png);
 }
-#projects .photo-6 {
+#projects .photo-06 {
   grid-area: photo-6;
+  background-image: url(/img/work-05.png);
 }
-#projects .photo-9 {
+#projects .photo-09 {
   grid-area: photo-9;
+  background-image: url(/img/work-07.png);
 }
 #projects .photo-10 {
   grid-area: photo-10;
+  background-image: url(/img/work-08.png);
 }
-#projects .photo-8 {
+#projects .photo-08 {
   grid-area: photo-8;
+  background-image: url(/img/work-09.png);
 }
 #projects .photo-11 {
   grid-area: photo-11;
+  background-image: url(/img/work-10.png);
 }
 #projects .photo-12 {
   grid-area: photo-12;
+  background-image: url(/img/work-11.png);
 }
 #projects .photo-13 {
   grid-area: photo-13;
+  background-image: url(/img/work-12.png);
 }
 #projects .photo-14 {
   grid-area: photo-14;
+  background-image: url(/img/work-14.png);
 }
 #projects .photo-15 {
   grid-area: photo-15;
+  background-image: url(/img/work-15.png);
 }
 #projects .photo-16 {
   grid-area: photo-16;
+  background-image: url(/img/work-16.png);
 }
 
 /*# sourceMappingURL=main.css.map */
