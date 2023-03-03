@@ -113,6 +113,7 @@ section {
 }
 
 #projects {
+  background-color: black;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -130,6 +131,14 @@ section {
 #projects .tile a {
   display: grid;
   height: 100%;
+}
+#projects .tile:not(.main-photo) {
+  opacity: 0.5;
+  transition: all 0.1s ease-in;
+}
+#projects .tile:hover:not(.main-photo) {
+  transform: scale(0.99);
+  opacity: 1;
 }
 #projects .main-photo {
   grid-area: main-photo;
@@ -213,6 +222,55 @@ section {
 #projects .photo-16 {
   grid-area: photo-16;
   background-image: url(/img/work-16.png);
+}
+
+#posts {
+  padding: 10px;
+  background-color: rgb(66, 186, 255);
+  display: grid;
+  gap: 10px;
+  grid-template: repeat(2, 300px)/repeat(3, 350px);
+  justify-content: center;
+  align-content: center;
+}
+#posts .post {
+  display: grid;
+  align-content: end;
+  border-radius: 5px;
+  background-color: white;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+#posts .post .title {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+#posts .post .title:hover {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.7);
+}
+#posts .post a {
+  color: white;
+  text-decoration: none;
+}
+#posts .post-1 {
+  background-image: url(/img/work-15.png);
+}
+#posts .post-2 {
+  background-image: url(/img/work-02.png);
+}
+#posts .post-3 {
+  background-image: url(/img/work-05.png);
+}
+#posts .post-4 {
+  background-image: url(/img/work-08.png);
+}
+#posts .post-5 {
+  background-image: url(/img/work-10.png);
+}
+#posts .post-6 {
+  background-image: url(/img/work-15.png);
 }
 
 /*# sourceMappingURL=main.css.map */
