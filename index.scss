@@ -91,7 +91,7 @@ section{
         .front{
         background-image: url(img/work-01.png);
         }
-        &:hover{
+       &:hover{
             .front{
                 margin-top:-50%; 
             }
@@ -302,7 +302,7 @@ section{
         color: white;
         display: grid;
         gap: 15px;
-        grid-template: auro/auto;
+        grid-template: auto/auto;
         box-sizing: border-box ;
         input{
             @include styleinputs();
@@ -326,3 +326,6 @@ section{
         }
     }
 }
+
+
+
